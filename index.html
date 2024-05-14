@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Search App | ghandidev</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./img/logo600x150black-t.png" alt="large-logo" />
+        <p>Pokémon Search App</p>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <form>
+          <label for="search-input">Search for Pokémon Name or ID:</label>
+          <div class="search">
+            <input
+              id="search-input"
+              name="search-input"
+              type="text"
+              placeholder="pikachu"
+              required
+            />
+            <button id="search-button" type="submit">Search</button>
+          </div>
+        </form>
+        <div class="screen"></div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th id="base">Base</th>
+                <th id="stats">Stats</th>
+              </tr>
+            </thead>
+            <tbody id="stats-container"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
