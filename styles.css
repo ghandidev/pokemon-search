@@ -4,6 +4,20 @@
   --container-color: #222;
   --tab-color: #dde931;
   --tab-hover-color: #080808;
+  --grass: rgb(90, 160, 25);
+  --poison: rgb(155, 113, 223);
+  --electric: rgb(233, 175, 68);
+  --fire: rgb(218, 96, 59);
+  --flying: rgb(67, 153, 211);
+  --water: rgb(45, 83, 252);
+  --bug: rgb(139, 165, 43);
+  --normal: rgb(172, 185, 201);
+  --ground: rgb(153, 132, 73);
+  --fairy: rgb(208, 180, 245);
+  --psychic: rgb(212, 72, 212);
+  --fighting: rgb(145, 106, 143);
+  --steel: rgb(142, 165, 179);
+  --ghost: rgb(123, 159, 212);
 }
 
 *,
@@ -66,7 +80,8 @@ label {
   display: flex;
   margin: 1.3rem;
   align-items: stretch;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 23rem;
 }
 input {
   width: 70%;
@@ -92,11 +107,45 @@ button:active {
   height: 15rem;
   border-radius: 5px;
 }
+.pokemon {
+  display: flex;
+  margin: 5px;
+}
+.pokemon-name {
+  text-transform: uppercase;
+}
+.pokemon-id {
+  margin-left: 10px;
+}
+.measures {
+  display: flex;
+  margin: 5px;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+.sprite-container {
+  display: flex;
+  margin: 30px;
+}
+.sprite-container > img {
+  scale: 1.7;
+  margin: 0 auto;
+}
+.types-container {
+  display: flex;
+  justify-content: center;
+}
+.types-container > .types {
+  border-radius: 5px;
+  padding: 3px 10px;
+  margin-left: 5px;
+  text-transform: uppercase;
+}
 table {
   width: 23rem;
   color: var(--text-ligth-color);
   margin: 5px auto;
-  table-layout: fixed;
+  table-layout: auto;
   border-collapse: separate;
 }
 th {
@@ -106,4 +155,50 @@ th {
   border-radius: 4px;
   color: var(--main-bg-color);
   padding: 5px;
+}
+td:not(:first-child) {
+  font-size: 1.1rem;
+}
+
+.grass {
+  background-color: var(--grass);
+}
+.electric {
+  background-color: var(--electric);
+}
+.fire {
+  background-color: var(--fire);
+}
+.flying {
+  background-color: var(--flying);
+}
+.water {
+  background-color: var(--water);
+}
+.bug {
+  background-color: var(--bug);
+}
+.normal {
+  background-color: var(--normal);
+}
+.ground {
+  background-color: var(--ground);
+}
+.fairy {
+  background-color: var(--fairy);
+}
+.psychic {
+  background-color: var(--psychic);
+}
+.poison {
+  background-color: var(--poison);
+}
+.fighting {
+  background-color: var(--fighting);
+}
+.steel {
+  background-color: var(--steel);
+}
+.ghost {
+  background-color: var(--ghost);
 }
