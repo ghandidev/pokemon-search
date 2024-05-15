@@ -17,7 +17,7 @@
     </nav>
     <main>
       <div class="container">
-        <form>
+        <form id="pokemon-form">
           <label for="search-input">Search for Pokémon Name or ID:</label>
           <div class="search">
             <input
@@ -27,10 +27,21 @@
               placeholder="pikachu...example"
               required
             />
-            <button id="search-button" type="button">Search</button>
+            <button id="search-button" type="submit">Search</button>
           </div>
         </form>
-        <div id="screen" class="screen"></div>
+        <div id="screen" class="screen">
+          <div class="pokemon">
+            <p id="pokemon-name" class="pokemon-name"></p>
+            <p id="pokemon-id" class="pokemon-id"></p>
+          </div>
+          <div class="measures">
+            <p id="weight"></p>
+            <p id="height"></p>
+          </div>
+          <div class="sprite-container"></div>
+          <div id="types" class="types-container"></div>
+        </div>
         <div class="table-wrapper">
           <table>
             <thead>
@@ -39,7 +50,32 @@
                 <th id="stats">Stats</th>
               </tr>
             </thead>
-            <tbody id="stats-container"></tbody>
+            <tbody id="stats-container">
+              <tr>
+                <th>HP:</th>
+                <th id="hp"></th>
+              </tr>
+              <tr>
+                <th>Attack:</th>
+                <th id="attack"></th>
+              </tr>
+              <tr>
+                <th>Defense:</th>
+                <th id="defense"></th>
+              </tr>
+              <tr>
+                <th>Sp. Attack:</th>
+                <th id="special-attack"></th>
+              </tr>
+              <tr>
+                <th>Sp. Defense:</th>
+                <th id="special-defense"></th>
+              </tr>
+              <tr>
+                <th>Speed:</th>
+                <th id="speed"></th>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
